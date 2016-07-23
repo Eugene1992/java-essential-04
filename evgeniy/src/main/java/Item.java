@@ -39,7 +39,4 @@ public class Item {
         this.date = date;
     }
 
-
-
-
 }
