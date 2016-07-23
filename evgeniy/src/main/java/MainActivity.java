@@ -63,6 +63,7 @@ public class MainActivity {
             System.out.println("ID = " + objectList.get(i).getId() + "\nName = " + objectList.get(i).getName() + "\nCost = " +
                     objectList.get(i).getCost() + "\nDate = " + objectList.get(i).getDate());
             System.out.println();
+
         }
     }
 }
