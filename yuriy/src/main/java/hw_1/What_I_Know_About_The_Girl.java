@@ -1,4 +1,4 @@
-package Hw_1;
+package hw_1;
 
 /**
  * Created by shast on 7/22/2016.
