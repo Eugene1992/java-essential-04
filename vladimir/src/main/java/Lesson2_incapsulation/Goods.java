@@ -1,12 +1,13 @@
 package Lesson2_incapsulation;
 
 import java.text.SimpleDateFormat;
+import java.util.Comparator;
 import java.util.Date;
 
 /**
  * Describes goods item
  */
-public class Goods {
+public class Goods implements Comparable<Goods> {
     private static int idCounter = 0;
     private int id = 0;
     private String name = "unknown";
@@ -59,6 +60,19 @@ public class Goods {
     public String getCreationDate() {
         SimpleDateFormat ft = new SimpleDateFormat("dd.MM.yy 'at' HH:mm");
         return ft.format(creationDate);
+    }
+
+    @Override
+    public int compareTo(Goods o) {
+        if( this.getPrice() > o.getPrice() ){
+            return 1;
+        }
+
+        if(this.getPrice() < o.getPrice() ){
+            return -1;
+        }
+
+        return 0;
     }
 
     @Override

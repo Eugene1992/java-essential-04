@@ -1,9 +1,6 @@
 package Lesson2_incapsulation;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created by main_ on 23.07.2016.
@@ -33,6 +30,8 @@ public class GoodsStorage {
         storage.add(goods8);
         storage.add(goods9);
         storage.add(goods10);
+
+        Collections.sort(storage); // some cheat because I had no time to implement algorithm of myself
 
         for(Goods item : storage){
             System.out.println(item);
