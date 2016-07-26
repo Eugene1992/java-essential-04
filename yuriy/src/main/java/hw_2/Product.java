@@ -21,6 +21,7 @@ public class Product implements Comparable<Product> {
     public String toString() {
         return date + "| " + name + "| " + price + "\n";
     }
+    Product(){}
     Product(String name, double price, String date) {
         this.date = formatting.format(dating.getTime());
         this.id = ID_START_VALUE++;
@@ -63,6 +64,19 @@ public class Product implements Comparable<Product> {
             return o1.getDate().compareTo(o2.getDate());
         }
     };
+
+    static Product p1 = new Product("Milk", 4.50, "date");
+    static Product p2 = new Product("Eggs", 6.75, "date");
+    static Product p3 = new Product("Beer", 8.40, "date");
+    static Product p4 = new Product("Beef", 2.75, "date");
+    static Product p5 = new Product("Bred", 1.05, "date");
+    static Product p6 = new Product("Chicken", 5.50, "date");
+    static Product p7 = new Product("Tomatoes", 0.25, "date");
+    static Product p8 = new Product("Plumps", 2.15, "date");
+    static Product p9 = new Product("Grape", 11.30, "date");
+    static Product p10 = new Product("Carrot", 4.56, "date");
+
+    static Product[] productsArray = new Product[]{p1, p2, p3, p4, p5, p6, p7, p8, p9, p10};
 }
 
 
