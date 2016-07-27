@@ -16,5 +16,8 @@ public class Main extends Product{
 
         Arrays.sort(productsArray, Product.DateCompare);
         System.out.println("Date: " + "\n " + Arrays.toString(productsArray));
+
+        Arrays.sort(productsArray, Product.IdCompare);
+        System.out.println("Id: " + "\n " + Arrays.toString(productsArray));
     }
 }

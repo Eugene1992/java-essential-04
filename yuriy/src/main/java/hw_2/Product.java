@@ -19,7 +19,7 @@ public class Product implements Comparable<Product> {
     SimpleDateFormat formatting = new SimpleDateFormat("HH:mm:ss:SSS");
 
     public String toString() {
-        return date + "| " + name + "| " + price + "\n";
+        return date + "| " + name + "| " + price + "| " + id +"\n";
     }
     Product(){}
     Product(String name, double price, String date) {
@@ -28,7 +28,6 @@ public class Product implements Comparable<Product> {
         this.name = name;
         this.price = price;
     }
-
     public String getName() {
         return name;
     }
@@ -64,7 +63,11 @@ public class Product implements Comparable<Product> {
             return o1.getDate().compareTo(o2.getDate());
         }
     };
-
+    public static Comparator<Product> IdCompare = new Comparator<Product>() {
+        public int compare(Product o1, Product o2) {
+            return (int) o1.getId() - o2.getId();
+        }
+    };
     static Product p1 = new Product("Milk", 4.50, "date");
     static Product p2 = new Product("Eggs", 6.75, "date");
     static Product p3 = new Product("Beer", 8.40, "date");
