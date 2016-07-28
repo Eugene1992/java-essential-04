@@ -3,11 +3,11 @@ package hw_3;
 /**
  * Created by shast on 7/28/2016.
  */
-    abstract public class Shape {
+    abstract public class MainShape {
     double S, P = 3.14, Sina, Siny;
     int a, b, R, h;
-    Shape (){}
-    Shape(double S, double P, double Siny, double Sina, int a, int b, int R, int h){
+    MainShape(){}
+    MainShape(double S, double P, double Siny, double Sina, int a, int b, int R, int h){
         this.S = S;
         this.P = P;
         this.Siny = Siny;
@@ -17,9 +17,8 @@ package hw_3;
         this.R = R;
         this.h = h;
     }
-
     public String areCalculate(){
-        return "Площа фігур";
+        return "Визначаємо площі фігур";
     }
     public static void main(String[] args) {
         Rectangle r = new Rectangle(5, 5);
@@ -37,5 +36,4 @@ package hw_3;
         System.out.println(q.areCalculate());
         System.out.println(qs.areCalculate());
     }
-
 }

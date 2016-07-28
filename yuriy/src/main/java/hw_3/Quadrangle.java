@@ -3,7 +3,7 @@ package hw_3;
 /**
  * Created by shast on 7/28/2016.
  */
-public class Quadrangle extends Shape {
+public class Quadrangle extends MainShape {
     Quadrangle(int a, int h, int b, double Siny){
         this.a = a;
         this.Siny = Siny;
