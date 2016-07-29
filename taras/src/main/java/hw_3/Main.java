@@ -5,7 +5,7 @@ public class Main {
         Parallelogram p = new Parallelogram(5, 5, 5, 90);
         Quadrate q = new Quadrate(2);
         Rectangle r = new Rectangle(4, 3);
-        Rhomb rh = new Rhomb(3, 4, 0);
+        Rhomb rh = new Rhomb(4, 4, 90);
         Triangle tr = new Triangle(3, 4);
         Trapeze t = new Trapeze(2, 3, 4);
 

@@ -11,6 +11,6 @@ public class Rhomb extends Square {
     }
 
     public String areCalculate() {
-        return "Phomb S = " + a * h + "\n" + "           S = a*a*SinAlpha = " + (a * b) * Math.sin(Math.toRadians(alpha));
+        return "Phomb S = " + a * h + "\n" + "           S = a*a*SinAlpha = " + a * a * Math.sin(Math.toRadians(alpha));
     }
 }

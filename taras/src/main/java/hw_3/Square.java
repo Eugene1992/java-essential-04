@@ -24,31 +24,6 @@ public abstract class Square {
         this.gamma = gamma;
         this.s = s;
 
-   /* }
-    public int getA() {
 
-        return a;
-    }
-    public int getB() {
-
-        return b;
-    }
-    public int getH() {
-
-        return h;
-    }
-    public int getAlpha()
-    {
-        return alpha;
-    }
-    public int getGamma() {
-
-        return gamma;
-    }
-    public int s() {
-        return s;
-    }
-}
-*/
     }
 }
