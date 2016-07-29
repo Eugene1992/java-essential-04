@@ -9,6 +9,6 @@ package hw_3;
         this.R = R;
     }
     public String areCalculate() {
-        return "Circle S = " + (P * (R * R)) / R;
+        return "Circle S = " + P * (R * R);
     }
 }

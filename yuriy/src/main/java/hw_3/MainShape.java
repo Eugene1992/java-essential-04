@@ -1,9 +1,9 @@
 package hw_3;
 
 /**
- * Created by shast on 7/28/2016.
+ * Створюємо головний абстрактний клас з полями та методом
  */
-    abstract public class MainShape {
+abstract public class MainShape {
     double S, P = 3.14;
     int a, b, R, h, Sina, Siny;
     MainShape(){}
@@ -18,16 +18,23 @@ package hw_3;
         this.h = h;
     }
     public String areCalculate(){
-        return "Визначаємо площі фігур";
+        return "--- Визначаємо площі фігур ---";
     }
     public static void main(String[] args) {
+        MainShape m1 = new MainShape() {
+            @Override
+            public String areCalculate() {
+                return super.areCalculate();
+            }
+        };
         Rectangle r = new Rectangle(5, 5);
         Square s = new Square(2);
         Circle c = new Circle(4);
-        Rhombus rh = new Rhombus(130, 2, 3);
+        Rhombus rh = new Rhombus(60, 2, 3);
         Pyramid p = new Pyramid(2, 2);
         Quadrangle q = new Quadrangle(60, 2, 3, 4);
         QuadrangleSecond qs = new QuadrangleSecond(2, 3, 4);
+        System.out.println(m1.areCalculate() + "\n");
         System.out.println(r.areCalculate());
         System.out.println(s.areCalculate());
         System.out.println(c.areCalculate());
