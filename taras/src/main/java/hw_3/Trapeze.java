@@ -1,15 +1,18 @@
 package hw_3;
 
-public class Trapeze extends Square {
-    Trapeze() {
+public class Trapeze extends Figure {
+
+    Trapeze(int sideOne, int sideTwo, int height) {
+
+        this.sideOne = sideOne;
+        this.sideTwo = sideTwo;
+        this.height = height;
+
     }
 
-    Trapeze(int a, int b, int h) {
-        this.a = a;
-        this.b = b;
-        this.h = h;
-    }
-    public String areCalculate() {
-        return "Trapeze S = " + ((a + b) / 2) * h + "\n";
+    public String calculate() {
+
+        return "Trapeze:" + "\n" + "S = " + ((sideOne + sideTwo) / 2) * height;
+
     }
 }

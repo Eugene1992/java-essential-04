@@ -1,15 +1,16 @@
 package hw_3;
 
-public class Quadrate extends Square {
+public class Quadrate extends Figure {
 
-    Quadrate() {
+    Quadrate(int sideOne) {
+
+        this.sideOne = sideOne;
+
     }
 
-    Quadrate(int a) {
-        this.a = a;
-    }
+    public String calculate() {
 
-    public String areCalculate() {
-        return "Quadrate S = " + a * a + "\n";
+        return "Quadrate:" + "\n" + "S = " + sideOne * sideOne;
+
     }
 }

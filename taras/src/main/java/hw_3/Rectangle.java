@@ -1,17 +1,17 @@
 package hw_3;
 
-/**
- * Created by Тарас on 28.07.2016.
- */
-public class Rectangle extends Square {
-    Rectangle() {
+public class Rectangle extends Figure {
+
+    Rectangle(int sideOne, int sideTwo) {
+
+        this.sideOne = sideOne;
+        this.sideTwo = sideTwo;
+
     }
 
-    Rectangle(int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
-    public String areCalculate() {
-        return "Rectangle S = " + a * b + "\n";
+    public String calculate() {
+
+        return "Rectangle:" + "\n" + "S = " + sideOne * sideTwo;
+
     }
 }

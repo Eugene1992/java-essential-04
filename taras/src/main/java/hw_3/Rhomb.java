@@ -1,16 +1,18 @@
 package hw_3;
 
-public class Rhomb extends Square {
-    Rhomb() {
-    }
+public class Rhomb extends Figure {
 
-    Rhomb(int a, int h, int alpha) {
-        this.a = a;
-        this.h = h;
+    Rhomb(int sideOne, int height, int alpha) {
+
+        this.sideOne = sideOne;
+        this.height = height;
         this.alpha = alpha;
+
     }
 
-    public String areCalculate() {
-        return "Phomb S = " + a * h + "\n" + "           S = a*a*SinAlpha = " + a * a * Math.sin(Math.toRadians(alpha));
+    public String calculate() {
+
+        return "Phomb:" + "\n" + "S = " + sideOne * height + "\n" + "S = a*a*SinAlpha = " + sideOne * sideOne * Math.sin(Math.toRadians(alpha));
+
     }
 }
