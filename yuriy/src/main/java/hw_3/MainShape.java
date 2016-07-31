@@ -1,46 +1,47 @@
 package hw_3;
 
-/**
- * Створюємо головний абстрактний клас з полями та методом
- */
-abstract public class MainShape {
-    double S, P = 3.14;
-    int a, b, R, h, Sina, Siny;
-    MainShape(){}
-    MainShape(double S, double P, int Siny, int Sina, int a, int b, int R, int h){
-        this.S = S;
-        this.P = P;
-        this.Siny = Siny;
-        this.Sina = Sina;
-        this.a = a;
-        this.b = b;
-        this.R = R;
-        this.h = h;
+public abstract class MainShape {
+    protected double pNumber = 3.14;
+    protected int sideA;
+    protected int sideB;
+    protected int radiusR;
+    protected int height;
+    protected int sinA;
+    protected int sinY;
+
+    MainShape() {
+
     }
-    public String areCalculate(){
-        return "--- Визначаємо площі фігур ---";
+
+    MainShape(double pNumber, int sinY, int sinA, int sideA, int sideB, int radiusR, int height) {
+        this.pNumber = pNumber;
+        this.sinY = sinY;
+        this.sinA = sinA;
+        this.sideA = sideA;
+        this.sideB = sideB;
+        this.radiusR = radiusR;
+        this.height = height;
     }
+
+    abstract public String areaCalc();
+
     public static void main(String[] args) {
-        MainShape m1 = new MainShape() {
-            @Override
-            public String areCalculate() {
-                return super.areCalculate();
-            }
-        };
-        Rectangle r = new Rectangle(5, 5);
-        Square s = new Square(2);
-        Circle c = new Circle(4);
-        Rhombus rh = new Rhombus(60, 2, 3);
-        Pyramid p = new Pyramid(2, 2);
-        Quadrangle q = new Quadrangle(60, 2, 3, 4);
-        QuadrangleSecond qs = new QuadrangleSecond(2, 3, 4);
-        System.out.println(m1.areCalculate() + "\n");
-        System.out.println(r.areCalculate());
-        System.out.println(s.areCalculate());
-        System.out.println(c.areCalculate());
-        System.out.println(rh.areCalculate());
-        System.out.println(p.areCalculate());
-        System.out.println(q.areCalculate());
-        System.out.println(qs.areCalculate());
+
+        Rectangle rectOne = new Rectangle(5, 5);
+        Square squarOne = new Square(2);
+        Circle circOne = new Circle(4);
+        Rhombus rhombOne = new Rhombus(90, 3, 3);
+        Triangle trianOne = new Triangle(2, 2);
+        Parallelogram parOne = new Parallelogram(90, 4, 4, 4);
+        Trapeze trapOne = new Trapeze(2, 3, 4);
+
+        printObjects(rectOne, circOne, rhombOne, trianOne, parOne, trapOne);
+    }
+
+    public static void printObjects(MainShape... figures) {
+        for (MainShape mainshape : figures) {
+            System.out.println(mainshape.areaCalc());
+
+        }
     }
 }

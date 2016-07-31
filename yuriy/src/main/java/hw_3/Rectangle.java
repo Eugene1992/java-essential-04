@@ -1,15 +1,15 @@
 package hw_3;
 
-/**
- * Created by shast on 7/28/2016.
- */
 public class Rectangle extends MainShape {
-    Rectangle(){}
-    Rectangle(int a, int b){
-        this.a = a;
-        this.b = b;
+    Rectangle() {
     }
-    public String areCalculate(){
-        return "Rectangle S = " + a * b;
+
+    Rectangle(int sideA, int sideB) {
+        this.sideA = sideA;
+        this.sideB = sideB;
+    }
+
+    public String areaCalc() {
+        return "Rectangle S = " + sideA * sideB;
     }
 }
