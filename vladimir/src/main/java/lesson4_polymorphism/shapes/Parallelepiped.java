@@ -7,14 +7,14 @@ public class Parallelepiped extends Shape {
     private double sideA = -1;
     private double sideB = -1;
     private double height = -1;
-    private int gamma = -1;
+    private double gamma = -1;
 
     public Parallelepiped(double sideA, double height){
         setSideA(sideA);
         setHeight(height);
     }
 
-    public Parallelepiped(double sideA, double sideB, int gamma){
+    public Parallelepiped(double sideA, double sideB, double gamma){
         setSideA(sideA);
         setSideB(sideB);
         setGamma(gamma);
@@ -38,9 +38,9 @@ public class Parallelepiped extends Shape {
         }
     }
 
-    public void setGamma(int gamma) {
+    public void setGamma(double gamma) {
         if(gamma > 0) {
-            this.gamma = gamma;
+            this.gamma = Math.toRadians(gamma);
         }
     }
 
@@ -56,7 +56,7 @@ public class Parallelepiped extends Shape {
         return height;
     }
 
-    public int getGamma() {
+    public double getGamma() {
         return gamma;
     }
 
