@@ -35,7 +35,7 @@ public abstract class MainShape {
         Parallelogram parOne = new Parallelogram(90, 4, 4, 4);
         Trapeze trapOne = new Trapeze(2, 3, 4);
 
-        printObjects(rectOne, circOne, rhombOne, trianOne, parOne, trapOne);
+        printObjects(rectOne, squarOne, circOne, rhombOne, trianOne, parOne, trapOne);
     }
 
     public static void printObjects(MainShape... figures) {
