@@ -1,17 +1,16 @@
 package hw_3;
 
-/**
- * Created by shast on 7/28/2016.
- */
-
 public class Rhombus extends Circle {
-    Rhombus(){}
-    Rhombus(int Sina, int a, int h){
-        this.Sina = Sina;
-        this.a = a;
-        this.h = h;
+    Rhombus() {
     }
-    public String areCalculate() {
-        return "Rhombus S = a^2*Sinα = " + (a * a) * Math.sin(Math.toRadians(Sina)) +"\n" + "        S = a*h = " + a * h;
+
+    Rhombus(int sinA, int sideA, int height) {
+        this.sinA = sinA;
+        this.sideA = sideA;
+        this.height = height;
+    }
+
+    public String areaCalc() {
+        return "Rhombus S = a^2*Sinα = " + (sideA * sideA) * Math.sin(Math.toRadians(sinA)) + "\n" + "S = a*h = " + sideA * height;
     }
 }
