@@ -8,11 +8,7 @@ public abstract class Figure {
     int alpha;
     int gamma;
 
-    public String calculate(){
-
-        return "";
-
-    }
+    public abstract String calculate();
 
     Figure() {
     }
