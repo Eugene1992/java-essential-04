@@ -12,4 +12,5 @@ public abstract class Figure {
 
     Figure() {
     }
+
 }
