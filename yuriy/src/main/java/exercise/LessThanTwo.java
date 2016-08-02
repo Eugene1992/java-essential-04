@@ -23,6 +23,7 @@ public class LessThanTwo extends Employee {
             salary = scan.nextInt();
 
             infAboutEmp.addAll(Arrays.asList(name, surname, position, salary));
+
         }
 
         System.out.println(infAboutEmp.get(0)); // print one employee

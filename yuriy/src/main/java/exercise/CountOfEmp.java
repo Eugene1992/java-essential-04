@@ -9,5 +9,7 @@ public class CountOfEmp extends Employee {
         System.out.print("Write number of Employee : ");
         int numbOfEmp = scan.nextInt();
         return numbOfEmp;
+
+
     }
 }

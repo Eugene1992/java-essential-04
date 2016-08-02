@@ -19,7 +19,7 @@ public class Employee {
     protected static int salary;
 
     Employee() {
-
+        
     }
 
     static int countOfEmp = CountOfEmp.countOfEmp(); // count of employee

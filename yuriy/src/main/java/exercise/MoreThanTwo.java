@@ -10,6 +10,7 @@ public class MoreThanTwo extends Employee {
 
         for (int i = 0; i < Employee.countOfEmp; i++) {
 
+
             System.out.print("Write name: ");
             name = scan.next();
 

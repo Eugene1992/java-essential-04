@@ -12,6 +12,7 @@ public class Search extends Employee {
 
         int index = infAboutEmp.indexOf(position);
 
+
         System.out.println(index);
         System.out.println("It is: " + infAboutEmp.get(index));
     }
