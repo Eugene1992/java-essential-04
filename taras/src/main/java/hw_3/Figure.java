@@ -2,17 +2,13 @@ package hw_3;
 
 public abstract class Figure {
 
-    int sideOne;
-    int sideTwo;
-    int height;
-    int alpha;
-    int gamma;
+   protected int sideOne;
+   protected int sideTwo;
+   protected int height;
+   protected int alpha;
+   protected int gamma;
 
-    public String calculate(){
-
-        return "";
-
-    }
+    public abstract String calculate();
 
     Figure() {
     }

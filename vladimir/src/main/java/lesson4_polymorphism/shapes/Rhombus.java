@@ -5,18 +5,9 @@ package lesson4_polymorphism.shapes;
  */
 public class Rhombus extends Shape {
     private double sideA = -1;
-    private int alpha = -1;
+    private double alpha = -1;
     private double height = -1;
 
-    public Rhombus(double sideA, int alpha){
-        setSideA(sideA);
-        setAlpha(alpha);
-    }
-
-    public Rhombus(double sideA, double height){
-        setSideA(sideA);
-        setHeight(height);
-    }
 
     public void setSideA(double sideA) {
         if(sideA > 0) {
@@ -24,9 +15,9 @@ public class Rhombus extends Shape {
         }
     }
 
-    public void setAlpha(int alpha) {
+    public void setAlpha(double alpha) {
         if(alpha >= 0 && alpha <= 360) {
-            this.alpha = alpha;
+            this.alpha = Math.toRadians(alpha);
         }
     }
 
