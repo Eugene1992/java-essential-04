@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
+
         ArrayList arrList = new ArrayList();
 
 //        add();
@@ -34,7 +35,11 @@ public class Main {
 //        get();
         long d = System.currentTimeMillis();
         System.out.println(d);
-        Object d0 = arrList.get(999_999);
+
+        for (int i = 0; i <arrList.size() ; i++) {
+            arrList.get(999999);
+        }
+
         long d1 = System.currentTimeMillis();
         System.out.println(System.currentTimeMillis());
         System.out.println("ArrayList get 999_999: " + (d1 - d));
@@ -43,7 +48,9 @@ public class Main {
 
         long g = System.currentTimeMillis();
         System.out.println(d);
-        Object g0 = arrList.get(999_999);
+        for (int i = 0; i <arrList.size() ; i++) {
+            linkedList.get(999999);
+        }
         long g1 = System.currentTimeMillis();
         System.out.println(System.currentTimeMillis());
         System.out.println("LinkedList get 999_999: " + (g1 - g));
@@ -53,7 +60,9 @@ public class Main {
 //        set();
         long s = System.currentTimeMillis();
         System.out.println(d);
-        Object s0 = arrList.set(999999, 56);
+        for (int i = 0; i <arrList.size() ; i++) {
+            arrList.set(999999, 5);
+        }
         long s1 = System.currentTimeMillis();
         System.out.println(System.currentTimeMillis());
         System.out.println("ArrayList set 999_999 to 56: " + (s1 - s));
@@ -62,7 +71,9 @@ public class Main {
 
         long s2 = System.currentTimeMillis();
         System.out.println(d);
-        Object s01 = linkedList.set(999999, 56);
+        for (int i = 0; i <arrList.size() ; i++) {
+            linkedList.set(999999, 5);
+        }
         long s3 = System.currentTimeMillis();
         System.out.println(System.currentTimeMillis());
         System.out.println("ArrayList set 999_999 to 56: " + (s3 - s2));
@@ -72,7 +83,9 @@ public class Main {
 //        remove();
         long r = System.currentTimeMillis();
         System.out.println(d);
-        Object r0 = arrList.remove(999999);
+        for (int i = 0; i <arrList.size() ; i++) {
+            arrList.remove(5);
+        }
         long r1 = System.currentTimeMillis();
         System.out.println(System.currentTimeMillis());
         System.out.println("ArrayList remove 999_999: " + (r1 - r));
@@ -81,7 +94,9 @@ public class Main {
 
         long r2 = System.currentTimeMillis();
         System.out.println(g);
-        Object r01 = linkedList.remove(999999);
+        for (int i = 0; i <arrList.size() ; i++) {
+            linkedList.remove(5);
+        }
         long r3 = System.currentTimeMillis();
         System.out.println(System.currentTimeMillis());
         System.out.println("LinkedList remove 999_999: " + (r3 - r2));
