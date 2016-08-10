@@ -39,7 +39,7 @@ public class ReflectionAnalyzer {
             drawClassBuilder.append("strictfp ");
         }
 
-        //add simple class name
+        //add simple class b
         drawClassBuilder.append("class ").append(aClass.getSimpleName());
 
         //get superclass
@@ -91,7 +91,7 @@ public class ReflectionAnalyzer {
             if (Modifier.isVolatile(fieldMods)) {
                 fieldModsBuilder.append("volatile ");
             }
-            //get field type simple name
+            //get field type simple b
             Class fieldType = field.getType();
             fieldModsBuilder.append(fieldType.getSimpleName()).append(" ");
             //get field values

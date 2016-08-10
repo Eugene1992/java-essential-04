@@ -8,8 +8,8 @@ public class CatChild extends Cat {
         //CatChild catChild = new CatChild();
         //int privateField = cat.privateField;
         //int packageField = cat.packageField;
-        //int protectedField = catChild.protectedField;
-        //int publicField = cat.publicField;
+        //int z = catChild.z;
+        //int x = cat.x;
 
         cat = null;
 

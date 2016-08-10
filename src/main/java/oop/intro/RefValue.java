@@ -1,4 +1,4 @@
-package oop;
+package oop.intro;
 
 import oop.encapsulation.cat_pachage.Human;
 
