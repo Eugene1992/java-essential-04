@@ -18,11 +18,11 @@ public class Main {
 
     public static void printObject(Figure[] figureArray) {
 
-        for(Figure figure : figureArray)
-    System.out.println(figure.calculate());
+        for (Figure figure : figureArray)
+            System.out.println(figure.calculate());
 
-        }
     }
+}
 
 
 
